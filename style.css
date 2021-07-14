@@ -12,6 +12,10 @@
         color: white;
     }
     
+    li.option {
+        display: none;
+    }
+    
     nav {
         width: calc(100%- 10px);
         background-color: #464343;
@@ -38,12 +42,7 @@
     }
     
     .item {
-        margin: 7px;
-    }
-    
-    li.menu,
-    li.filter {
-        float: left;
+        margin: 5px;
     }
     
     li.hamburger {
@@ -133,6 +132,9 @@
             width: calc(50% - 6px);
             margin: 2px;
         }
+        li.erste {
+            display: inline;
+        }
         .container .box img {
             height: 180px;
         }
@@ -147,6 +149,9 @@
             margin-top: 5px;
             margin-bottom: 0px;
         }
+        li.zweite {
+            display: inline;
+        }
         article ul.notig {
             margin-left: 20px;
         }
@@ -157,10 +162,10 @@
             text-align: left;
         }
         .container {
-            width: 960px;
+            width: 900px;
         }
         .container .box {
-            width: calc(25% - 24px)
+            width: calc(25% - 25px)
         }
         article ul.notig,
         article ul.sonst {
@@ -171,7 +176,8 @@
             display: block;
             background-color: cadetblue;
             width: 10%;
-            height: 1205px;
+            height: 1200px;
+            /* z-index: -1; */
             position: relative;
             float: left;
             margin-right: 5px;
@@ -183,9 +189,17 @@
         li.filter {
             float: none;
         }
-        li.hamburger {
-            position: absolute;
-            top: 2px;
-            right: 2px;
+        li.hamburger,
+        li.search,
+        li.shipping,
+        li.basket {
+            display: none;
+        }
+        li.option {
+            display: block;
+        }
+        .item {
+            font-weight: 600;
+            margin-top: 10px;
         }
     }
