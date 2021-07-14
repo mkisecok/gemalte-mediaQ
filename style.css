@@ -197,7 +197,6 @@
      }
      article ul.notig,
      article ul.sonst {
-         /* float: left; */
          margin-left: 50px;
      }
      nav {
@@ -213,10 +212,6 @@
      }
      nav ul li {
          display: block;
-     }
-     li.menu,
-     li.filter {
-         float: none;
      }
      li.hamburger,
      li.search,
