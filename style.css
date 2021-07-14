@@ -89,7 +89,6 @@
     }
     
     .title {
-        width: 100%;
         background-color: rgb(245, 237, 222);
         margin-top: 0;
         margin-bottom: 2px;
@@ -131,7 +130,7 @@
         }
         .container .box {
             display: inline-block;
-            width: 45%;
+            width: calc(50% - 6px);
             margin: 2px;
         }
         .container .box img {
@@ -144,13 +143,12 @@
             width: 750px;
         }
         .container .box {
-            width: 32%;
+            width: calc(33% - 6px);
             margin-top: 5px;
             margin-bottom: 0px;
         }
-        article ul {
-            float: left;
-            margin-left: 100px;
+        article ul.notig {
+            margin-left: 20px;
         }
     }
     
@@ -162,28 +160,11 @@
             width: 960px;
         }
         .container .box {
-            width: 24%;
+            width: calc(25% - 7px)
         }
-        /* article ul {
-            float: left;
-            margin-left: 150px;
-        } */
-        .footer {
-            display: inline-block;
-            width: 100%;
-            /* padding-top: 15px; */
-        }
-        .notig {
-            display: inline-block;
-            float: left;
-            margin: 0;
-        }
-        .notig ul {
-            margin: 0;
-            margin-top: 15px;
-        }
-        .sonst {
-            margin: auto;
-            display: block;
+        article ul.notig,
+        article ul.sonst {
+            /* float: left; */
+            margin-left: 50px;
         }
     }
