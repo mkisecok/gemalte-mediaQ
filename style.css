@@ -41,7 +41,7 @@
         margin: 7px;
     }
     
-    li.menü,
+    li.menu,
     li.filter {
         float: left;
     }
@@ -160,11 +160,32 @@
             width: 960px;
         }
         .container .box {
-            width: calc(25% - 7px)
+            width: calc(25% - 24px)
         }
         article ul.notig,
         article ul.sonst {
             /* float: left; */
             margin-left: 50px;
+        }
+        nav {
+            display: block;
+            background-color: cadetblue;
+            width: 10%;
+            height: 1205px;
+            position: relative;
+            float: left;
+            margin-right: 5px;
+        }
+        nav ul li {
+            display: block;
+        }
+        li.menu,
+        li.filter {
+            float: none;
+        }
+        li.hamburger {
+            position: absolute;
+            top: 2px;
+            right: 2px;
         }
     }
